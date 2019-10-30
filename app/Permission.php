@@ -18,6 +18,6 @@ class Permission extends Model
 
     public function users()
     {
-        return $this->belongsToMany('App\User');  // muchos a muchos
+        return $this->belongsToMany('App\User')->withTimestamps();  // muchos a muchos
     }
 }
