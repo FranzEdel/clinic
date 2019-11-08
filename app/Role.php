@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Role extends Model
 {
     protected $fillable = [
-        'name', 'slug', 'description'
+        'name', 'description', 'slug'
     ];
 
     // RELACIONES
@@ -22,7 +22,19 @@ class Role extends Model
     }
 
     // ALMACENAMIENTO
+    public function store($request)
+    {
+        $slug = str_slug($request->name, '-');
+        return self::create($request->all() + [
+            'slug' => $slug,
+        ]);
+    }
 
+    public function my_update($request)
+    {
+        $slug = str_slug($request->name, '-');
+        self::update($request->all() + ['slug' => $slug]);
+    }
 
     // VALIDACION
 

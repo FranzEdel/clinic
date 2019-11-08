@@ -10,4 +10,5 @@
 <link href="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/plugins/flag-icon/css/flag-icon.min.css') }}" rel="stylesheet">
 
+
 @yield('head')

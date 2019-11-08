@@ -3,7 +3,7 @@
     <li class="user-details cyan darken-2">
       <div class="row">
         <div class="col col s4 m4 l4">
-          <img src="images/avatar/avatar-7.png" alt="" class="circle responsive-img valign profile-image cyan">
+          <img src="../images/avatar/avatar-7.png" alt="" class="circle responsive-img valign profile-image cyan">
         </div>
         <div class="col col s8 m8 l8">
           <ul id="profile-dropdown-nav" class="dropdown-content">
@@ -38,6 +38,13 @@
           <a href="index.html" class="waves-effect waves-cyan">
               <i class="material-icons">pie_chart_outlined</i>
               <span class="nav-text">Panel de Administración</span>
+            </a>
+        </li>
+
+        <li class="bold">
+          <a href="{{ route('backoffice.role.index') }}" class="waves-effect waves-cyan">
+              <i class="material-icons">perm_identity</i>
+              <span class="nav-text">Roles del Sistema</span>
             </a>
         </li>
 
