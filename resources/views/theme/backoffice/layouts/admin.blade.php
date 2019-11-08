@@ -17,7 +17,6 @@
       <div class="wrapper">
         @include('theme.backoffice.layouts.includes.left-sidebar')
         <section id="content">
-          @include('theme.backoffice.layouts.includes.breadcrumbs')
           <div class="container">
             @yield('content')
           </div>
